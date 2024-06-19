@@ -16,7 +16,7 @@ export default function App() {
   const contacts = useSelector(selectContacts);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchContacts)
+    dispatch(fetchContacts())
   }, [dispatch])
   
   return (
